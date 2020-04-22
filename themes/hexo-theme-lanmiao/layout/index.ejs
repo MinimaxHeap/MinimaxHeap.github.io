@@ -40,7 +40,12 @@
                     </div>
                     <div class="post-author">
                         <h4>Author</h4>
-                        <h5>Kevin Feng</h5>
+                        <h5><%= post.author %></h5>
+                        <% if(post.author=="Kevin Feng"){ %>
+                            <img src="<%- url_for( config.favicon_Kevin )%>">
+                        <% } else{ %>  
+                            <img src="<%- url_for( config.favicon_Jessica )%>">
+                        <% } %>
                         <img src="<%- url_for( config.favicon )%>">
                         <p>
                             <a href="javascript:;" data-href="<%- url_for(post.path) %>">

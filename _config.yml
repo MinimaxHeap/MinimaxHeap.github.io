@@ -3,14 +3,15 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Kevin Feng's Blog
+title: MiniMax Heap's Blog
 subtitle:
 description:
 keywords:
-author: Kevin Feng
+author: Kevin Feng, Jessica
 language:
 timezone:
-favicon: /Kevin.JPG
+favicon_Kevin: /Kevin.JPG
+favicon_Jessica: /Jessica.JPG
 header-img: /trianglify-2560x1600.png
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
@@ -84,6 +85,15 @@ theme: hexo-theme-lanmiao
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: https://github.com/KevinvFeng/KevinvFeng.github.io.git
+  repo: https://github.com/MinimaxHeap/MinimaxHeap.github.io.git
   branch: master
 
+# MathJax
+math:
+  engine: 'mathjax'
+  mathjax:
+    src: https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML  
+
+# Sitemap
+sitemap: 
+  path: sitemap.xml
