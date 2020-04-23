@@ -15,3 +15,12 @@ tags:
     - dropout
     - regularization
     - batch normalization
+## 什么是batch normalization
+
+## 避免梯度消失/爆炸
+- 预训练加微调
+- 梯度剪切、权重正则（针对梯度爆炸）
+- 使用不同的激活函数
+- 使用batchnorm
+- 使用残差结构
+- 使用LSTM网络
