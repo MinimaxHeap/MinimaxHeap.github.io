@@ -1,6 +1,7 @@
 ---
 title: 语音处理领域中的一些机器学习概念
 date: 2018-11-23 21:21:42
+author: Kevin Feng
 tags:
 - Machine Learning
 - Speech Processing
