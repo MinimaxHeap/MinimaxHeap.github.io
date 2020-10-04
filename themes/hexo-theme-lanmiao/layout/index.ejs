@@ -13,7 +13,7 @@
 
             <div class="post-preview">
                 <div class="layout-top">
-                    <h5 class="post-subtitle"><%- post.subtitle || "Unsubtitled" %>
+                    <h5 class="post-subtitle"><%- post.subtitle || "" %>
                         <span class="post-meta"><%- date(post.date, "YYYY-MM-DD") %> <i class="fa fa-bookmark"></i></span>
                     </h5>
                     <div class="clearfix"></div>
@@ -39,7 +39,7 @@
                         </div>
                     </div>
                     <div class="post-author">
-                        <h4>Author</h4>
+                        <h4>作者</h4>
                         <h5><%= post.author %></h5>
                         <% if(post.author=="Kevin Feng"){ %>
                             <img src="<%- url_for( config.favicon_Kevin )%>">

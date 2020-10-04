@@ -18,12 +18,12 @@
             <ul class="pager">
                 <% if (page.prev){ %>
                 <li class="previous">
-                    <a href="<%- url_for(page.prev.path) %>" >&larr; Previous Post</a>
+                    <a href="<%- url_for(page.prev.path) %>" >&larr; 上一篇</a>
                 </li>
                 <% } %>
                 <% if (page.next){ %>
                 <li class="next">
-                    <a href="<%- url_for(page.next.path) %>" >Next Post &rarr;</a>
+                    <a href="<%- url_for(page.next.path) %>" >下一篇 &rarr;</a>
                 </li>
                 <% } %>
             </ul>
@@ -41,7 +41,7 @@
 ">
             <!-- toc -->
             <div class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix-top" role="complementary">
-                <h4><i class="fa fa-bookmark"></i> Catalog</h4>
+                <h4><i class="fa fa-bookmark"></i> 目录</h4>
                 <ul class="nav bs-docs-sidenav">
 
                 </ul>

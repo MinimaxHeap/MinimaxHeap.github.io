@@ -1,8 +1,8 @@
 # Header
 menu:
-  Home: /
-  Portfolio: /portfolio
-  About: /about
+  主页: /
+#  Portfolio: /portfolio
+#  About: /about
 
 # Miscellaneous
 google_analytics: UA-129595389-1
