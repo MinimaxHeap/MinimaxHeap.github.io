@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="en">
+
+<!-- Head -->
+<!doctype html>
+<html lang="en">
+<head><meta name="generator" content="Hexo 3.9.0">
+    <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="keyword" content="">
+    <link rel="shortcut icon" href="">
+
+    
+
+    <title>
+        
+        中科恒智 |
+        
+        MiniMax Heap&#39;s Blog
+    </title>
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- Custom Fonts -->
+    <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Plugin CSS -->
+
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/markdownplus.css">
+
+    <!-- ↓这是stylus文件 -->
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="/css/highlight.css">
+    <link rel="stylesheet" href="/css/toc.css">
+
+    <!-- Google Analytics -->
+    
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-129595389-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+ 
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+    (adsbygoogle = window.adsbygoogle || []).push({
+        google_ad_client: "ca-pub-2050152873704053",
+        enable_page_level_ads: true
+    });
+    </script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+</head>
+<body></body>
+<!-- hexo-inject:begin --><!-- hexo-inject:end --></html>
+
+<body>
+
+<!-- Header -->
+<!-- Post Header -->
+<style type="text/css">
+    header.intro-header {
+     background-image: url('');
+        /*post*/
+    
+    }
+</style>
+
+<header class="intro-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <!-- 文章 -->
+                
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                        <a class="tag" href="/tags/#面试"
+                           title="面试">面试</a>
+                        
+                        <a class="tag" href="/tags/#机器学习"
+                           title="机器学习">机器学习</a>
+                        
+                    </div>
+                    <h1>中科恒智</h1>
+                    <h2 class="subheading"></h2>
+                    <span class="meta">
+                            Posted by Kevin Feng, Jessica on
+                        2020-04-27
+                        </span>
+                </div>
+                <!-- 非文章 -->
+                
+
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Nav -->
+<!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">MiniMax Heap&#39;s Blog</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <!-- Known Issue, found by Hux:
+            <nav>'s height woule be hold on by its content.
+            so, when navbar scale out, the <nav> will cover tags.
+            also mask any touch event of tags, unfortunately.
+        -->
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    
+                    <li><a href="/">主页</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+
+<!-- Content -->
+<!-- Content -->
+<div class="container">
+    <div class="row">
+        <!-- Post container -->
+
+        <div class="
+                col-lg-8 col-lg-offset-1
+                col-md-8 col-md-offset-1
+                col-sm-12
+                col-xs-12
+                post-container
+            ">
+
+            <p>不知道过没过,该答的基本都说了,但是感觉面试官没有态度所以不好说.</p>
+<ol>
+<li>从自我介绍开始</li>
+<li>让我介绍word2vec我的如何改进的</li>
+<li>问我pWord2vec怎么加速的</li>
+<li>问我有没有大项目经历,毕竟word2vec只是一小部分基础的,我说了课程项目</li>
+<li>然后问我神经网络都会多少什么的</li>
+<li>考我LSTM, 让我描述一下<ol>
+<li>我一开始答错了,三个门的问题.跟我理解的有点不太一样</li>
+<li>我顺着引导说的</li>
+<li>又考我中间的forget gate是作用在那个state上的</li>
+<li>LSTM作用于那些领域,我说的跟时间相关的或者是序列上的(股票以及NLP)</li>
+</ol>
+</li>
+<li>之后问我逻辑回归, 描述一下<ol>
+<li>我从中说了线性回归 然后外层一个sigmoid函数</li>
+<li>问我怎么计算$\theta$ 我就说用Loss 然后逐步更新</li>
+<li>问我如果陷入局部最优解了怎么办</li>
+<li>我有点卡住了,没人这么问我,我说了L1和L2但是没有说optimizer的 思路断了</li>
+<li>然后继续让我解释L1以及L2,我说了公式是什么, 以及分别有什么用</li>
+</ol>
+</li>
+<li>让我设计一个模型,自选特征, 自选模型预测某一次的飞机航班的准点率<ol>
+<li>我先重复了一下他的问题,确认了一下准点率是01还是x%,也就是分类还是回归</li>
+<li>说了一下特征,航空公司名,起飞到达机场的准点特征,这个航班的历史10次特征(懒得用时序做)之类的吧</li>
+<li>算法就是简单地逻辑回归或者三层神经网络这样子</li>
+</ol>
+</li>
+<li>还有一个是问我如何避免过拟合,跟上次志翔科技问的一样,我答的也一样,但是实际上可以再多加上Bagging和贝叶斯<ol>
+<li>补充问我如何应用Early-Stopping</li>
+<li>回答: 当上一次的Loss跟下一次的没怎么变化的时候或者小于某一个阈值,这个阈值自己随便设就停止</li>
+</ol>
+</li>
+<li>问我有没有问他们的,他门说是在中科院旗下的.</li>
+<li>还问我是不是北京的,我说是东城的之后他说留学生优惠对我来说好像没用=.=</li>
+<li>两个星期之后给答复吧,如果过了就要等回国笔试了,得现场.</li>
+</ol>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><ul>
+<li>总的来说面试也基本都考这些吧, 我基本上面出经验了,考的题也都差不多.几乎不需要再准备什么了除了决策树套装以及传统机器学习和LSTM</li>
+<li>关于面试官,她也挺会引导的吧,不是那种问一道题答一道的那种,会从我说的关键词中顺着走. 如果说错了也会纠正比如LSTM.但是感觉她有点像考核一样计分的,我说对了她就说嗯,好. 然后就过了,没有给太多让我补充的空间,就像是写完了一道题赶紧跳到下一道题一样. 还有就是我感觉不出她的倾向,不知道自己是过了还是没过..</li>
+<li>BTW,所有的算法岗面试,除了小黑盒都问的机器学习相关,但是小黑盒一点没问反而问我word2vec有什么意义.我感觉小黑盒不咋地呀</li>
+</ul>
+
+
+
+            <!-- Pager -->
+            <ul class="pager">
+                
+                <li class="previous">
+                    <a href="/AbnormalDetectionKeInterview/" >&larr; 上一篇</a>
+                </li>
+                
+                
+                <li class="next">
+                    <a href="/ZShieldIncInterview/" >下一篇 &rarr;</a>
+                </li>
+                
+            </ul>
+
+
+
+        </div>
+        <!-- Sidebar container-->
+        <div class="
+    col-lg-3 col-lg-offset-0
+    col-md-3 col-md-offset-0
+    col-sm-12
+    col-xs-12
+    sidebar-container
+">
+            <!-- toc -->
+            <div class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix-top" role="complementary">
+                <h4><i class="fa fa-bookmark"></i> 目录</h4>
+                <ul class="nav bs-docs-sidenav">
+
+                </ul>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                
+
+                </ul>
+                <p class="copyright text-muted">
+                    Copyright &copy; MiniMax Heap&#39;s Blog 2020
+                    <br>
+                    Theme by <a href="http://beantech.org/">Bean Tech</a>
+                    <span style="display: inline-block; margin: 0 5px;">
+                        <i class="fa fa-heart"></i>
+                    </span> 
+                    re-Ported by <a href="https://minimaxheap.github.io">MiniMax Heap&#39;s Blog</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="https://cdn.staticfile.org/jquery/2.2.4/jquery.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/script.js"></script><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config("");
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+      all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+</script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+<!-- End: Injected MathJax -->
+<!-- hexo-inject:end -->
+
+
+
+
+</body>
+</html>

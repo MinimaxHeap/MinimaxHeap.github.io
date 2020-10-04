@@ -1,0 +1,916 @@
+<!doctype html>
+<html lang="en">
+
+<!-- Head -->
+<!doctype html>
+<html lang="en">
+<head><meta name="generator" content="Hexo 3.9.0">
+    <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="keyword" content="">
+    <link rel="shortcut icon" href="">
+
+    
+
+    <title>
+        
+        MiniMax Heap&#39;s Blog
+    </title>
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- Custom Fonts -->
+    <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Plugin CSS -->
+
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/markdownplus.css">
+
+    <!-- ↓这是stylus文件 -->
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="/css/highlight.css">
+    <link rel="stylesheet" href="/css/toc.css">
+
+    <!-- Google Analytics -->
+    
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-129595389-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+ 
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+    (adsbygoogle = window.adsbygoogle || []).push({
+        google_ad_client: "ca-pub-2050152873704053",
+        enable_page_level_ads: true
+    });
+    </script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+</head>
+<body></body>
+<!-- hexo-inject:begin --><!-- hexo-inject:end --></html>
+
+<body>
+
+<!-- Header -->
+<!-- Post Header -->
+<style type="text/css">
+    header.intro-header {
+     background-image: url('/trianglify-2560x1600.png');
+        /*config*/
+    
+    }
+</style>
+
+<header class="intro-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <!-- 文章 -->
+                
+                <div class="site-heading">
+                    <h1>MiniMax Heap&#39;s Blog</h1>
+                    <!--<hr class="small">-->
+                    <span class="subheading"></span>
+                </div>
+                
+
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Nav -->
+<!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">MiniMax Heap&#39;s Blog</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <!-- Known Issue, found by Hux:
+            <nav>'s height woule be hold on by its content.
+            so, when navbar scale out, the <nav> will cover tags.
+            also mask any touch event of tags, unfortunately.
+        -->
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    
+                    <li><a href="/">主页</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+
+<!-- Content -->
+<div class="container">
+    <div class="row">
+        <!-- Post Container -->
+        <div class="
+                col-lg-8 col-lg-offset-1
+                col-md-8 col-md-offset-1
+                col-sm-12
+                col-xs-12
+                post-container
+            ">
+
+            
+
+            <div class="post-preview">
+                <div class="layout-top">
+                    <h5 class="post-subtitle">
+                        <span class="post-meta">2020-10-04 <i class="fa fa-bookmark"></i></span>
+                    </h5>
+                    <div class="clearfix"></div>
+                </div>
+
+                <div class="layout-bottom">
+                    <div class="post-content-container">
+                        <a href="/DrugDiscoveryReview/">
+                            <h2 class="post-title">AI药物发现概述 2020</h2>
+                            <div class="post-content">
+                                <!-- <img src="/DrugDiscoveryReview/trianglify-2560x1600.png" class="post-header-img"> -->
+                                <p class="post-excerpt">药物发现领域的问题药物研发一直都是一个高回报的领域，但是成功研发出一款能上市销售的药物却要消耗非常大的金钱以及大量的时间，同时也并不是所有设计出来的药物分子都会被成功应用上市。一般来说一款药物从研发到上市大概要花费20亿美金1并且要有......</p>
+                            </div>
+                        </a>
+
+                        <div class="tags">
+                            
+                            <a class="tag" href="/tags/机器学习">机器学习</a>
+                            
+                            <a class="tag" href="/tags/药物发现">药物发现</a>
+                            
+                            <a class="tag" href="/tags/人工智能">人工智能</a>
+                            
+                        </div>
+                    </div>
+                    <div class="post-author">
+                        <h4>作者</h4>
+                        <h5>Kevin Feng</h5>
+                        
+                            <img src="/Kevin.JPG">
+                        
+                        <p>
+                            <a href="javascript:;" data-href="/DrugDiscoveryReview/">
+                                <span><i class="fa fa-link"></i></span>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            
+
+            <div class="post-preview">
+                <div class="layout-top">
+                    <h5 class="post-subtitle">
+                        <span class="post-meta">2020-05-13 <i class="fa fa-bookmark"></i></span>
+                    </h5>
+                    <div class="clearfix"></div>
+                </div>
+
+                <div class="layout-bottom">
+                    <div class="post-content-container">
+                        <a href="/Invalid-Swift-Support/">
+                            <h2 class="post-title">iOS 提交审核 Invalid Swift Support, SwiftSupport folder is empty</h2>
+                            <div class="post-content">
+                                <!-- <img src="/Invalid-Swift-Support/undefined" class="post-header-img"> -->
+                                <p class="post-excerpt">...</p>
+                            </div>
+                        </a>
+
+                        <div class="tags">
+                            
+                            <a class="tag" href="/tags/iOS">iOS</a>
+                            
+                        </div>
+                    </div>
+                    <div class="post-author">
+                        <h4>作者</h4>
+                        <h5>Kevin Feng</h5>
+                        
+                            <img src="/Kevin.JPG">
+                        
+                        <p>
+                            <a href="javascript:;" data-href="/Invalid-Swift-Support/">
+                                <span><i class="fa fa-link"></i></span>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            
+
+            <div class="post-preview">
+                <div class="layout-top">
+                    <h5 class="post-subtitle">
+                        <span class="post-meta">2020-05-12 <i class="fa fa-bookmark"></i></span>
+                    </h5>
+                    <div class="clearfix"></div>
+                </div>
+
+                <div class="layout-bottom">
+                    <div class="post-content-container">
+                        <a href="/ShanyinKejiInterview/">
+                            <h2 class="post-title">闪银科技面经</h2>
+                            <div class="post-content">
+                                <!-- <img src="/ShanyinKejiInterview/undefined" class="post-header-img"> -->
+                                <p class="post-excerpt">...</p>
+                            </div>
+                        </a>
+
+                        <div class="tags">
+                            
+                            <a class="tag" href="/tags/面试">面试</a>
+                            
+                            <a class="tag" href="/tags/机器学习">机器学习</a>
+                            
+                        </div>
+                    </div>
+                    <div class="post-author">
+                        <h4>作者</h4>
+                        <h5>Kevin Feng</h5>
+                        
+                            <img src="/Kevin.JPG">
+                        
+                        <p>
+                            <a href="javascript:;" data-href="/ShanyinKejiInterview/">
+                                <span><i class="fa fa-link"></i></span>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            
+
+            <div class="post-preview">
+                <div class="layout-top">
+                    <h5 class="post-subtitle">
+                        <span class="post-meta">2020-04-29 <i class="fa fa-bookmark"></i></span>
+                    </h5>
+                    <div class="clearfix"></div>
+                </div>
+
+                <div class="layout-bottom">
+                    <div class="post-content-container">
+                        <a href="/AbnormalDetectionKeInterview/">
+                            <h2 class="post-title">异常检测面试相关</h2>
+                            <div class="post-content">
+                                <!-- <img src="/AbnormalDetectionKeInterview/undefined" class="post-header-img"> -->
+                                <p class="post-excerpt">本文主要介绍异常检测相关的内容...</p>
+                            </div>
+                        </a>
+
+                        <div class="tags">
+                            
+                            <a class="tag" href="/tags/面试">面试</a>
+                            
+                            <a class="tag" href="/tags/机器学习">机器学习</a>
+                            
+                            <a class="tag" href="/tags/异常检测">异常检测</a>
+                            
+                        </div>
+                    </div>
+                    <div class="post-author">
+                        <h4>作者</h4>
+                        <h5>Kevin Feng</h5>
+                        
+                            <img src="/Kevin.JPG">
+                        
+                        <p>
+                            <a href="javascript:;" data-href="/AbnormalDetectionKeInterview/">
+                                <span><i class="fa fa-link"></i></span>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            
+
+            <div class="post-preview">
+                <div class="layout-top">
+                    <h5 class="post-subtitle">
+                        <span class="post-meta">2020-04-27 <i class="fa fa-bookmark"></i></span>
+                    </h5>
+                    <div class="clearfix"></div>
+                </div>
+
+                <div class="layout-bottom">
+                    <div class="post-content-container">
+                        <a href="/ZhongKeInterview/">
+                            <h2 class="post-title">中科恒智</h2>
+                            <div class="post-content">
+                                <!-- <img src="/ZhongKeInterview/undefined" class="post-header-img"> -->
+                                <p class="post-excerpt">...</p>
+                            </div>
+                        </a>
+
+                        <div class="tags">
+                            
+                            <a class="tag" href="/tags/面试">面试</a>
+                            
+                            <a class="tag" href="/tags/机器学习">机器学习</a>
+                            
+                        </div>
+                    </div>
+                    <div class="post-author">
+                        <h4>作者</h4>
+                        <h5></h5>
+                          
+                            <img src="/Jessica.JPG">
+                        
+                        <p>
+                            <a href="javascript:;" data-href="/ZhongKeInterview/">
+                                <span><i class="fa fa-link"></i></span>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            
+
+            <div class="post-preview">
+                <div class="layout-top">
+                    <h5 class="post-subtitle">
+                        <span class="post-meta">2020-04-22 <i class="fa fa-bookmark"></i></span>
+                    </h5>
+                    <div class="clearfix"></div>
+                </div>
+
+                <div class="layout-bottom">
+                    <div class="post-content-container">
+                        <a href="/ZShieldIncInterview/">
+                            <h2 class="post-title">志翔科技面经</h2>
+                            <div class="post-content">
+                                <!-- <img src="/ZShieldIncInterview/undefined" class="post-header-img"> -->
+                                <p class="post-excerpt">...</p>
+                            </div>
+                        </a>
+
+                        <div class="tags">
+                            
+                            <a class="tag" href="/tags/面试">面试</a>
+                            
+                        </div>
+                    </div>
+                    <div class="post-author">
+                        <h4>作者</h4>
+                        <h5>Kevin Feng</h5>
+                        
+                            <img src="/Kevin.JPG">
+                        
+                        <p>
+                            <a href="javascript:;" data-href="/ZShieldIncInterview/">
+                                <span><i class="fa fa-link"></i></span>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            
+
+            <div class="post-preview">
+                <div class="layout-top">
+                    <h5 class="post-subtitle">
+                        <span class="post-meta">2020-04-22 <i class="fa fa-bookmark"></i></span>
+                    </h5>
+                    <div class="clearfix"></div>
+                </div>
+
+                <div class="layout-bottom">
+                    <div class="post-content-container">
+                        <a href="/PythonInterview/">
+                            <h2 class="post-title">Python面试相关</h2>
+                            <div class="post-content">
+                                <!-- <img src="/PythonInterview/undefined" class="post-header-img"> -->
+                                <p class="post-excerpt">本文主要介绍python中与面试相关的内容
+
+装饰器迭代器/生成器
+调用iter()时 会返回一个拥有next()函数的对象,这个对象就是迭代器
+在使用for sth in Iterator:的时候就会自动调用iter()函数 然后返......</p>
+                            </div>
+                        </a>
+
+                        <div class="tags">
+                            
+                            <a class="tag" href="/tags/面试">面试</a>
+                            
+                            <a class="tag" href="/tags/python">python</a>
+                            
+                        </div>
+                    </div>
+                    <div class="post-author">
+                        <h4>作者</h4>
+                        <h5>Kevin Feng</h5>
+                        
+                            <img src="/Kevin.JPG">
+                        
+                        <p>
+                            <a href="javascript:;" data-href="/PythonInterview/">
+                                <span><i class="fa fa-link"></i></span>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            
+
+            <div class="post-preview">
+                <div class="layout-top">
+                    <h5 class="post-subtitle">
+                        <span class="post-meta">2020-04-21 <i class="fa fa-bookmark"></i></span>
+                    </h5>
+                    <div class="clearfix"></div>
+                </div>
+
+                <div class="layout-bottom">
+                    <div class="post-content-container">
+                        <a href="/AlibabaIterview/">
+                            <h2 class="post-title">AlibabaIterview</h2>
+                            <div class="post-content">
+                                <!-- <img src="/AlibabaIterview/undefined" class="post-header-img"> -->
+                                <p class="post-excerpt">...</p>
+                            </div>
+                        </a>
+
+                        <div class="tags">
+                            
+                            <a class="tag" href="/tags/面试">面试</a>
+                            
+                            <a class="tag" href="/tags/机器学习">机器学习</a>
+                            
+                            <a class="tag" href="/tags/阿里巴巴">阿里巴巴</a>
+                            
+                            <a class="tag" href="/tags/实习">实习</a>
+                            
+                            <a class="tag" href="/tags/算法">算法</a>
+                            
+                        </div>
+                    </div>
+                    <div class="post-author">
+                        <h4>作者</h4>
+                        <h5>Jessica</h5>
+                          
+                            <img src="/Jessica.JPG">
+                        
+                        <p>
+                            <a href="javascript:;" data-href="/AlibabaIterview/">
+                                <span><i class="fa fa-link"></i></span>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            
+
+            <div class="post-preview">
+                <div class="layout-top">
+                    <h5 class="post-subtitle">
+                        <span class="post-meta">2020-04-16 <i class="fa fa-bookmark"></i></span>
+                    </h5>
+                    <div class="clearfix"></div>
+                </div>
+
+                <div class="layout-bottom">
+                    <div class="post-content-container">
+                        <a href="/ByteDanceInterview/">
+                            <h2 class="post-title">字节跳动面经</h2>
+                            <div class="post-content">
+                                <!-- <img src="/ByteDanceInterview/undefined" class="post-header-img"> -->
+                                <p class="post-excerpt">字节跳动估计凉了
+
+自我介绍项目介绍
+为什么用word2vec
+做了哪些优化?
+问我了解不了解机器学习
+
+机器学习
+XGBoost这个不太了解
+
+神经网络
+描述一下CNN我讲了一下conv具体怎么做的, filter对应相乘相加
+多c......</p>
+                            </div>
+                        </a>
+
+                        <div class="tags">
+                            
+                            <a class="tag" href="/tags/面试">面试</a>
+                            
+                            <a class="tag" href="/tags/字节跳动">字节跳动</a>
+                            
+                            <a class="tag" href="/tags/面经">面经</a>
+                            
+                        </div>
+                    </div>
+                    <div class="post-author">
+                        <h4>作者</h4>
+                        <h5>Kevin Feng</h5>
+                        
+                            <img src="/Kevin.JPG">
+                        
+                        <p>
+                            <a href="javascript:;" data-href="/ByteDanceInterview/">
+                                <span><i class="fa fa-link"></i></span>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            
+
+            <div class="post-preview">
+                <div class="layout-top">
+                    <h5 class="post-subtitle">
+                        <span class="post-meta">2020-04-16 <i class="fa fa-bookmark"></i></span>
+                    </h5>
+                    <div class="clearfix"></div>
+                </div>
+
+                <div class="layout-bottom">
+                    <div class="post-content-container">
+                        <a href="/OperatingSystemInterview2/">
+                            <h2 class="post-title">操作系统面试相关(二)</h2>
+                            <div class="post-content">
+                                <!-- <img src="/OperatingSystemInterview2/undefined" class="post-header-img"> -->
+                                <p class="post-excerpt">本文主要记录了操作系统基础相关面试内容上篇: 操作系统面试相关
+
+
+进程同步为什么需要进程同步,是为了保证进程之间的依赖关系能够正常顺序执行
+锁为什么需要锁,因为有些进程需要单独占用资源,所以要防止其他进程访问资源
+自旋锁最简单的锁结......</p>
+                            </div>
+                        </a>
+
+                        <div class="tags">
+                            
+                            <a class="tag" href="/tags/面试">面试</a>
+                            
+                            <a class="tag" href="/tags/操作系统">操作系统</a>
+                            
+                        </div>
+                    </div>
+                    <div class="post-author">
+                        <h4>作者</h4>
+                        <h5>Kevin Feng</h5>
+                        
+                            <img src="/Kevin.JPG">
+                        
+                        <p>
+                            <a href="javascript:;" data-href="/OperatingSystemInterview2/">
+                                <span><i class="fa fa-link"></i></span>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            
+
+            <!-- Pager -->
+            <ul class="pager">
+    
+    
+        <li class="next"><a href="/page/2/">下一页  &rarr;</a></li>
+    
+</ul>
+
+        </div>
+
+        <!-- Sidebar -->
+        <!-- Sidebar container-->
+<div class="col-lg-3 col-lg-offset-0 col-md-3 col-md-offset-0 col-sm-12 col-xs-12 sidebar-container">
+    <div class="bs-docs-sidebar">
+
+        <!-- categoryWidget -->
+        <div class="categoryWidget">
+            <h3 style="text-align: center;">类别</h3>
+            <div id="accordion">
+                <!-- 分组 -->
+                
+
+                
+            </div>
+
+        </div>
+
+        <!-- archiveWidget -->
+        <div class="archiveWidget">
+            <h3 style="text-align: center;">归档</h3>
+
+            <div id="archive">
+                
+
+                
+                <div class="panel">
+                    <div class="archive">
+                        <span><i class="fa fa-angle-double-right"></i></span>
+                        <a class="archiveName" data-archive="2018archive" data-toggle="collapse"
+                           data-parent="#accordion"
+                           data-target="#2018archive"
+                           href="/archives/2018/">
+                            <h5>2018 (3)</h5>
+                        </a>
+                    </div>
+                    <div class="collapse" id="/archives/2018/">
+                        <ul>
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            <li>
+                                <span><i class="fa fa-angle-right"></i></span>
+                                <a class="archiveName" data-parchive="2018archive"
+                                   data-archive="201811archive"
+                                   href="/archives/2018/11/">
+                                    <h5>November
+                                        (3)</h5>
+                                </a>
+                            </li>
+                            
+                            
+                            
+                            
+                        </ul>
+                    </div>
+                </div>
+
+                
+                <div class="panel">
+                    <div class="archive">
+                        <span><i class="fa fa-angle-double-right"></i></span>
+                        <a class="archiveName" data-archive="2020archive" data-toggle="collapse"
+                           data-parent="#accordion"
+                           data-target="#2020archive"
+                           href="/archives/2020/">
+                            <h5>2020 (17)</h5>
+                        </a>
+                    </div>
+                    <div class="collapse" id="/archives/2020/">
+                        <ul>
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            <li>
+                                <span><i class="fa fa-angle-right"></i></span>
+                                <a class="archiveName" data-parchive="2020archive"
+                                   data-archive="202004archive"
+                                   href="/archives/2020/04/">
+                                    <h5>April
+                                        (14)</h5>
+                                </a>
+                            </li>
+                            
+                            
+                            
+                            <li>
+                                <span><i class="fa fa-angle-right"></i></span>
+                                <a class="archiveName" data-parchive="2020archive"
+                                   data-archive="202005archive"
+                                   href="/archives/2020/05/">
+                                    <h5>May
+                                        (2)</h5>
+                                </a>
+                            </li>
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            <li>
+                                <span><i class="fa fa-angle-right"></i></span>
+                                <a class="archiveName" data-parchive="2020archive"
+                                   data-archive="202010archive"
+                                   href="/archives/2020/10/">
+                                    <h5>October
+                                        (1)</h5>
+                                </a>
+                            </li>
+                            
+                            
+                            
+                            
+                            
+                            
+                        </ul>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+
+        <!-- tagWidget -->
+        <div class="tagWidget"
+             style="margin-top: 55px;">
+            <h3 style="text-align: center;">标签</h3>
+            <div class="tag">
+
+                
+
+                <a data-tag="面试"
+                   href="/tags/面试/">面试 (15)</a>
+                
+
+                <a data-tag="机器学习"
+                   href="/tags/机器学习/">机器学习 (9)</a>
+                
+
+                <a data-tag="异常检测"
+                   href="/tags/异常检测/">异常检测 (1)</a>
+                
+
+                <a data-tag="阿里巴巴"
+                   href="/tags/阿里巴巴/">阿里巴巴 (1)</a>
+                
+
+                <a data-tag="实习"
+                   href="/tags/实习/">实习 (1)</a>
+                
+
+                <a data-tag="算法"
+                   href="/tags/算法/">算法 (1)</a>
+                
+
+                <a data-tag="计算机网络"
+                   href="/tags/计算机网络/">计算机网络 (1)</a>
+                
+
+                <a data-tag="字节跳动"
+                   href="/tags/字节跳动/">字节跳动 (1)</a>
+                
+
+                <a data-tag="面经"
+                   href="/tags/面经/">面经 (1)</a>
+                
+
+                <a data-tag="药物发现"
+                   href="/tags/药物发现/">药物发现 (1)</a>
+                
+
+                <a data-tag="人工智能"
+                   href="/tags/人工智能/">人工智能 (1)</a>
+                
+
+                <a data-tag="iOS"
+                   href="/tags/iOS/">iOS (1)</a>
+                
+
+                <a data-tag="操作系统"
+                   href="/tags/操作系统/">操作系统 (2)</a>
+                
+
+                <a data-tag="神经网络"
+                   href="/tags/神经网络/">神经网络 (1)</a>
+                
+
+                <a data-tag="深度学习"
+                   href="/tags/深度学习/">深度学习 (1)</a>
+                
+
+                <a data-tag="NLP"
+                   href="/tags/NLP/">NLP (1)</a>
+                
+
+                <a data-tag="python"
+                   href="/tags/python/">python (1)</a>
+                
+
+                <a data-tag="推荐算法"
+                   href="/tags/推荐算法/">推荐算法 (1)</a>
+                
+
+                <a data-tag="Machine Learning"
+                   href="/tags/Machine Learning/">Machine Learning (3)</a>
+                
+
+                <a data-tag="Speech Processing"
+                   href="/tags/Speech Processing/">Speech Processing (3)</a>
+                
+
+                <a data-tag="GMM"
+                   href="/tags/GMM/">GMM (1)</a>
+                
+
+                <a data-tag="Math"
+                   href="/tags/Math/">Math (1)</a>
+                
+            </div>
+
+        </div>
+    </div>
+</div>
+    </div>
+</div>
+
+<!-- Footer -->
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                
+
+                </ul>
+                <p class="copyright text-muted">
+                    Copyright &copy; MiniMax Heap&#39;s Blog 2020
+                    <br>
+                    Theme by <a href="http://beantech.org/">Bean Tech</a>
+                    <span style="display: inline-block; margin: 0 5px;">
+                        <i class="fa fa-heart"></i>
+                    </span> 
+                    re-Ported by <a href="https://minimaxheap.github.io">MiniMax Heap&#39;s Blog</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="https://cdn.staticfile.org/jquery/2.2.4/jquery.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/script.js"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+
+
+
+
+</body>
+</html>
